@@ -54,7 +54,6 @@ Responsável por:
 | **Banco Vetorial** | ChromaDB |
 | **Áudio** | pydub |
 | **Download YouTube** | yt-dlp |
-| **Infraestrutura Recomendada** | GPU NVIDIA (CUDA) |
 
 ---
 
@@ -70,8 +69,8 @@ Responsável por:
 ### Clone o Repositório
 
 ```bash
-git clone [URL_DO_SEU_REPOSITORIO]
-cd [NOME_DO_REPOSITORIO]
+git clone https://github.com/luisfelipebp/SemanticAudioSearch.git
+cd SemanticAudioSearch
 ```
 
 ### Crie e Ative um Ambiente Virtual
