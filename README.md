@@ -98,7 +98,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Aviso sobre GPU/CPU
+# Aviso sobre GPU/CPU
 
 O modelo Whisper está configurado para usar CUDA por padrão.
 Se você não possui uma GPU NVIDIA, altere a linha correspondente em main.py para usar CPU:
@@ -112,19 +112,18 @@ model_whisper = WhisperModel("medium", device="cpu", compute_type="int8")
 
 Você precisará de dois terminais para rodar o projeto:
 
-Terminal 1 – Backend (FastAPI)
-
+## Terminal 1 – Backend (FastAPI)
 ```bash
 uvicorn main:app --host 127.0.0.1 --port 8000 --reload
 ```
 
-Terminal 2 – Frontend (Streamlit)
+## Terminal 2 – Frontend (Streamlit)
 ```bash
 streamlit run app.py
 ```
 
-Estrutura de Arquivos
-.
+### Estrutura de Arquivos
+
 ├── app.py                  # Frontend (Streamlit)
 ├── main.py                 # Backend (FastAPI)
 ├── process_audio.py        # Lógica de processamento e embeddings
