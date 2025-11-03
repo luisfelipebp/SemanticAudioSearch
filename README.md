@@ -72,7 +72,7 @@ Responsável por:
 ```bash
 git clone [URL_DO_SEU_REPOSITORIO]
 cd [NOME_DO_REPOSITORIO]
-
+```
 
 ### Crie e Ative um Ambiente Virtual
 
@@ -80,40 +80,48 @@ Crie um ambiente isolado para o projeto:
 
 ```bash
 python -m venv venv
+```
 
 Ative o ambiente:
 
+```
 # Windows
 .\venv\Scripts\activate
 
 # macOS / Linux
 source venv/bin/activate
-
+```
 
 ### Instale as Dependências
 
 ```bash
 pip install -r requirements.txt
-
+```
 
 Aviso sobre GPU/CPU
 
 O modelo Whisper está configurado para usar CUDA por padrão.
 Se você não possui uma GPU NVIDIA, altere a linha correspondente em main.py para usar CPU:
 
+```bash
 # Em main.py
 model_whisper = WhisperModel("medium", device="cpu", compute_type="int8")
+```
 
-Execute a Aplicação
+### Execute a Aplicação
 
 Você precisará de dois terminais para rodar o projeto:
 
 Terminal 1 – Backend (FastAPI)
 
+```bash
 uvicorn main:app --host 127.0.0.1 --port 8000 --reload
+```
 
 Terminal 2 – Frontend (Streamlit)
+```bash
 streamlit run app.py
+```
 
 Estrutura de Arquivos
 .
