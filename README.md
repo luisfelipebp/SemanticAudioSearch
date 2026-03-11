@@ -118,7 +118,7 @@ uvicorn main:app --host 127.0.0.1 --port 8000 --reload
 
 #### Terminal 2 – Frontend (Streamlit)
 ```bash
-streamlit run app.py
+streamlit run dashboard.py
 ```
 
 ### Estrutura de Arquivos
